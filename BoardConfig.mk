@@ -19,6 +19,8 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := victara
 
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/victara/mkbootimg.mk
+
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags
 
 BOARD_KERNEL_BASE := 0x0000000
