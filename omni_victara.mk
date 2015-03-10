@@ -30,11 +30,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_COPY_FILES += \
-    device/motorola/victara/kernel:kernel
-
-PRODUCT_COPY_FILES += device/motorola/victara/fstab.qcom:recovery/root/fstab.qcom
-
 PRODUCT_NAME := omni_victara
 PRODUCT_DEVICE := victara
 PRODUCT_BRAND := Motorola
