@@ -9,7 +9,7 @@ $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(INSTAL
 LZMA_RAMDISK := $(PRODUCT_OUT)/ramdisk-recovery-lzma.img
 
 $(LZMA_RAMDISK): $(recovery_ramdisk)
-	gunzip -f < $(recovery_ramdisk) | lzma -e > $@
+	gunzip -f < $(recovery_ramdisk) | lzma > $@
 
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(INSTALLED_DTIMAGE_TARGET) \
 		$(LZMA_RAMDISK) \
