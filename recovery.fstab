@@ -4,6 +4,7 @@
 /cache	         ext4              /dev/block/platform/msm_sdcc.1/by-name/cache
 #/misc	          emmc              /dev/block/platform/msm_sdcc.1/by-name/misc
 /recovery        emmc              /dev/block/platform/msm_sdcc.1/by-name/recovery
+/firmware        vfat              /dev/block/platform/msm_sdcc.1/by-name/modem     flags=backup=1;display=Modem;mounttodecrypt
 /efs1            emmc              /dev/block/platform/msm_sdcc.1/by-name/modemst1  flags=backup=1;display=EFS
 /efs2            emmc              /dev/block/platform/msm_sdcc.1/by-name/modemst2  flags=backup=1;subpartitionof=/efs1
 
