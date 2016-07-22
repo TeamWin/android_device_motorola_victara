@@ -27,16 +27,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_PACKAGES += \
-    charger_res_images \
-    charger
+	charger_res_images \
+	charger
 
 PRODUCT_NAME := omni_victara
 PRODUCT_DEVICE := victara
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := Moto X 2014
-PRODUCT_MANUFACTURER := Motoroloa
-
-# Kernel inline build
-#TARGET_KERNEL_CONFIG := victara_defconfig
-#TARGET_VARIANT_CONFIG := victara_defconfig
-#TARGET_SELINUX_CONFIG := victara_defconfig
+PRODUCT_MANUFACTURER := motorola
